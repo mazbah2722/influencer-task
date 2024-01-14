@@ -101,6 +101,59 @@ button:hover{
     /* width: 100%; */
     margin-right: 1.3em;
 }
+/* popular section */
+.popular-section h1{
+    text-align: center;
+    margin-bottom: 1em;
+    font-family: 'Poppins', sans-serif;
+    color: #3A3A3A;
+    font-weight: 600;
+}
+.p-container{
+    width: 75%;
+    margin: 2em auto;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.6em;
+    
+}
+.card-container .card{
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+.card-container .card img{
+    /* width: 90%; */
+    margin-bottom: 0.7em;
+   
+}
+.card-container .card h2{
+    margin-bottom: 0.7em;
+    color: #18191F;
+    font-size: 1.8em;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+.card-container .card h4{
+    margin-bottom: 0.7em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.3em;
+}
+.card-container .card p{
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+    color: #787885;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 143%; /* 20.02px */
+    letter-spacing: 0.252px;
+}
 
 
 @media screen and (max-width: 576px) {
@@ -127,6 +180,11 @@ button:hover{
         background-repeat: no-repeat;
         /* width: 100%; */
     }
+    .card-container{
+        
+        grid-template-columns: 1fr;
+       
+    }
     
 
 }
@@ -149,5 +207,11 @@ button:hover{
     }
     .sponsor-section{
         flex-wrap: wrap;
+    }
+    .card-container{
+        
+        grid-template-columns: repeat(2,1fr);
+       
+        
     }
 }
