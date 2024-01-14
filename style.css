@@ -35,7 +35,7 @@
     font-weight: 600;
     font-size: 1em;
 }
-/*  */
+/* banner section */
 .banner{
     display: flex;
     align-items: center;
@@ -77,30 +77,77 @@ button:hover{
 .banner-img{
     background: url('./images/Circle\ design.svg');
     background-repeat: no-repeat;
-    width: 48%;
+    /* width: 48%; */
+    max-width: 475px;
+    max-height: 475px;
 }
-
+.banner-img img{
+    max-width: 440px;
+    max-height: 414px;
+   
+}
+/* sponsor section */
+.sponsor-container{
+    width: 80%;
+    margin: 8em auto;
+}
+.sponsor-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.sponsor-section img{
+    /* width: 100%; */
+    margin-right: 1.3em;
+}
 
 
 @media screen and (max-width: 576px) {
     .nav-section, 
-    .nav-section ul{
+    .nav-section ul,
+    .sponsor-section{
         flex-direction: column;
     } 
-    .nav-section ul{
+    .sponsor-section{
         margin-top: 1em;
     }
+    
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .nav-section ul,
+    .banner-title,
+    .sponsor-section img
+    {
+        margin-top: 1.5em;
+    }
+    .banner-img{
+        background: url('./images/Circle\ design.svg');
+        background-repeat: no-repeat;
+        /* width: 100%; */
+    }
+    
+
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
     .nav-section
     {
         flex-direction: column;
     } 
+    .banner{
+        flex-direction: column-reverse;
+    }
     .nav-section ul{
         display: grid;
         grid-template-columns: repeat(3,1fr);
     }
-    .nav-section ul{
-        margin-top: 1em;
+    .nav-section ul,
+    .banner-title
+    {
+        margin-top: 1.5em;
+    }
+    .sponsor-section{
+        flex-wrap: wrap;
     }
 }
