@@ -77,6 +77,7 @@ button:hover{
 .banner-img{
     background: url('./images/Circle\ design.svg');
     background-repeat: no-repeat;
+    background-size: contain;
     /* width: 48%; */
     max-width: 475px;
     max-height: 475px;
@@ -84,6 +85,7 @@ button:hover{
 .banner-img img{
     max-width: 440px;
     max-height: 414px;
+    width: 100%;
    
 }
 /* sponsor section */
@@ -205,6 +207,7 @@ button:hover{
     .banner{
         flex-direction: column-reverse;
     }
+
     .nav-section ul,
     .banner-title,
     .sponsor-section img
